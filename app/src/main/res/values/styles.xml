@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Style all list questionView-->
+    <style name="list_group">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_vertical</item>
+        <item name="android:layout_marginRight">@dimen/margin_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/margin_vertical_8dp</item>
+        <item name="android:paddingBottom">@dimen/margin_vertical_8dp</item>
+    </style>
+
+    <!--Style all textview questionView-->
+    <style name="text_quiz">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/margin_vertical_8dp</item>
+        <item name="android:textSize">@dimen/title_question</item>
+    </style>
+
+    <!--style all checkbook questionView-->
+    <style name="check_question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_vertical_answer</item>
+        <item name="android:layout_marginRight">@dimen/margin_vertical_answer</item>
+    </style>
+
+    <!--Style all radiogroup questionView-->
+    <style name="radioggroup_question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_vertical</item>
+        <item name="android:paddingRight">@dimen/margin_vertical</item>
+    </style>
+
+    <!--Style all edittext questionView-->
+    <style name="edittex_question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_vertical_8dp</item>
+        <item name="android:focusable">auto</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:hint">@string/answer</item>
+    </style>
+</resources>

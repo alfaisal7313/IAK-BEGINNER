@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Object Wisata QuizApp</string>
+    <string name="title_name">Nama</string>
+    <string name="button_next">Next</string>
+    <string name="createBy">Create By Muhammad Al-Faisal</string>
+    <string name="button_start">Mulai</string>
+    <string name="answer">Jawaban</string>
+    <string name="submit">Submit</string>
+    <string name="score">Score</string>
+    <string name="title_spin">Jumlah Soal</string>
+    <!--Objek Wisata-->
+    <string name="wisata_kawah_putih">Kawah Putih merupakan sebuah danau yang terbentuk dari letusan Gunung Patuha, dimana lokasi wisata tersebut?</string>
+    <string name="wisata_raja_ampat">Kepulauan Raja Ampat merupakan rangkaian empat gugusan pulau yang berdekatan dan berlokasi diprovinsi?</string>
+    <string name="wisata_halmahera">Halmahera adalah pulau terbesar di Kepulauan Maluku, dengan luas tanah 17.780 km² (6.865 mil persegi). Pulau ini dibagi menjadi 10 kabupaten, diantanya? (Pilih 3 jawaban)</string>
+    <string name="wisata_nusa_dua">Objek wisata ini terletak 40 kilometer dari Denpasar provinsi Bali, dan terdapat bergai resort mewah, sebutkan nama objek wisata tersebut?</string>
+    <string name="wisata_danau_toba"><![CDATA[Sebuah danau yang berkawah seluas 1.145 kilometer persegi. Di tengahnya berdiam sebuah pulau dengan luas yang hampir sebanding dengan luas negara Singapura. Danau ini terletak di Provinsi Sumatera Utara, sebutkan nama danau tersebut?]]></string>
+    <string name="wisata_bunaken"><![CDATA[Taman laut yang terletak di Sulawesi Utara menjadi habitat bagi 390 spesies terumbu karang dan spesies laut , taman laut apakah itu?]]></string>
+    <string name="wisata_rinjani">Gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung ini merupakan gunung berapi kedua tertinggi di Indonesia, gunung tersebut adalah?</string>
+    <string name="wisata_bromo"><![CDATA[Gunung Bromo  adalah sebuah gunung berapi aktif di Jawa Timur,  suku Tengger mempercayai sebagai gunung suci. Setiap setahun sekali merekan mengadakan upacara Kasodo, tanggal berapakah upacara tersebut biasa dilakukan? (Pilih 2 jawaban)]]></string>
+    <string name="wisata_wakatobi"><![CDATA[Merupakan kawasan taman nasional yang ditetapkan pada tahun 1996, berlokasi di salah satu kabupaten di Provinsi Sulawesi Tenggara. Terdapat keanekaragaman hayati laut dan kondisi karang yang menempati salah satu posisi prioritas tertinggi dari konservasi laut di Indonesia, Objek wisata ini teletak dikabupaten?]]></string>
+    <string name="wisata_komodo"><![CDATA[Pulau yang terletak di Kepulauan Nusa Tenggara, pulau ini dikenal sebagai habitat asli. Pulau ini juga merupakan kawasan Taman Nasional, sebutkan nama pulau tersebut?]]></string>
+    <!--Array dropdown-->
+    <string-array name="question_amount">
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+</resources>

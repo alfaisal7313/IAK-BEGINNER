@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image">150dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="margin_vertical_answer">20dp</dimen>
+    <dimen name="margin_vertical_8dp">8dp</dimen>
+    <dimen name="margin_vertical_text">4dp</dimen>
+    <dimen name="margin_main">30dp</dimen>
+    <dimen name="title_question">16sp</dimen>
+    <dimen name="icon">100dp</dimen>
+    <dimen name="margin_icon">60dp</dimen>
+    <dimen name="title_result_medium">20sp</dimen>
+</resources>

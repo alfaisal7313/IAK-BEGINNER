@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.faisal.wisataquizapp.QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_vertical">
+
+        <!--Question group 1-->
+        <LinearLayout
+            android:id="@+id/question_group1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Kawah Putih-->
+            <LinearLayout
+                android:id="@+id/question1"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kawah_putih" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="1." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_kawah_putih" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_question1"
+                    style="@style/radioggroup_question">
+
+                    <RadioButton
+                        android:id="@+id/rb_1_q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jakarta" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2_q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bandung" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3_q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Surabaya" />
+
+                    <RadioButton
+                        android:id="@+id/rb_4_q1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makasar" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--Raja Ampat-->
+            <LinearLayout
+                android:id="@+id/question2"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/raja_ampat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="2." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_raja_ampat" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_question2"
+                    style="@style/radioggroup_question">
+
+                    <RadioButton
+                        android:id="@+id/rb_1_q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Papua" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2_q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jawa Barat" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3_q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nusa Tenggara Timur" />
+
+                    <RadioButton
+                        android:id="@+id/rb_4_q2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nusa Tenggara Barat" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--Halmahera-->
+            <LinearLayout
+                android:id="@+id/question3"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/halmahera" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="3." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_halmahera" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_1_q1"
+                    style="@style/check_question"
+                    android:text="Kabupaten Kepulauan Sula" />
+
+                <CheckBox
+                    android:id="@+id/cb_2_q1"
+                    style="@style/check_question"
+                    android:text="Kabupaten Berau" />
+
+                <CheckBox
+                    android:id="@+id/cb_3_q1"
+                    style="@style/check_question"
+                    android:text="Kabupaten Halmahera Utara" />
+
+                <CheckBox
+                    android:id="@+id/cb_4_q1"
+                    style="@style/check_question"
+                    android:text="Kabupaten Pulau Talibau" />
+            </LinearLayout>
+            <!--Nusa Dua-->
+            <LinearLayout
+                android:id="@+id/question4"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nusa_dua" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="4." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_nusa_dua" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_answer_4"
+                    style="@style/edittex_question" />
+
+            </LinearLayout>
+            <!--Danau Toba-->
+            <LinearLayout
+                android:id="@+id/question5"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/danau_toba" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="5." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_danau_toba" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_answer_5"
+                    style="@style/edittex_question" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Question group 2-->
+        <LinearLayout
+            android:id="@+id/question_group2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!--Taman Laut Bunaken-->
+            <LinearLayout
+                android:id="@+id/question6"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/taman_laut_bunaken" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="6." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_bunaken" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_question6"
+                    style="@style/radioggroup_question">
+
+                    <RadioButton
+                        android:id="@+id/rb_1_q6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taman Laut Takabonerate" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2_q6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taman Laut Selat Pantar" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3_q6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taman Laut Bunaken" />
+
+                    <RadioButton
+                        android:id="@+id/rb_4_q6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taman Laut Wakatobi" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--Gunung rinjani-->
+            <LinearLayout
+                android:id="@+id/question7"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gunung_rinjani" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="7." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_rinjani" />
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_question7"
+                    style="@style/radioggroup_question">
+
+                    <RadioButton
+                        android:id="@+id/rb_1_q7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gunung Galunggung" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2_q7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gunung Semeru" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3_q7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gunung Merbabu" />
+
+                    <RadioButton
+                        android:id="@+id/rb_4_q7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gunung Rinjani" />
+                </RadioGroup>
+
+            </LinearLayout>
+            <!--Gunung Bromo-->
+            <LinearLayout
+                android:id="@+id/question8"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gunung_bromo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="8." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_bromo" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_1_q8"
+                    style="@style/check_question"
+                    android:text="12" />
+
+                <CheckBox
+                    android:id="@+id/cb_2_q8"
+                    style="@style/check_question"
+                    android:text="14" />
+
+                <CheckBox
+                    android:id="@+id/cb_3_q8"
+                    style="@style/check_question"
+                    android:text="10" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_4_q8"
+                    style="@style/check_question"
+                    android:text="15" />
+
+            </LinearLayout>
+            <!--Wakatobi-->
+            <LinearLayout
+                android:id="@+id/question9"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wakatobi" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="9." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_wakatobi" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_answer_9"
+                    style="@style/edittex_question" />
+
+            </LinearLayout>
+            <!--Pulau Komodo-->
+            <LinearLayout
+                android:id="@+id/question10"
+                style="@style/list_group">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image"
+                    android:layout_marginBottom="@dimen/margin_vertical_8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pulau_komodo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="10." />
+
+                    <TextView
+                        style="@style/text_quiz"
+                        android:text="@string/wisata_komodo" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edt_answer_10"
+                    style="@style/edittex_question" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:background="@color/colorPrimary"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="submitQuestion"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
