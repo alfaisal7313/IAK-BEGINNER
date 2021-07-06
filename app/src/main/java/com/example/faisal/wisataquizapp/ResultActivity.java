@@ -1,11 +1,12 @@
 package com.example.faisal.wisataquizapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.RatingBar;
 import android.widget.TextView;
+
+import java.util.Objects;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -15,7 +16,7 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         //menghapus title pada toolbar
-        getSupportActionBar().setTitle("");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("");
         getSupportActionBar().setElevation(0);
 
         //mengambil data dari activity sebelumnya
@@ -26,7 +27,7 @@ public class ResultActivity extends AppCompatActivity {
 
         //manampilkan nama user
         TextView name_user = findViewById(R.id.nm_user);
-        name_user.setText("Nama : " + name);
+        name_user.setText(String.format(getString(R.string.name), name));
 
         //menampilakan hasil score yang diperoleh
         TextView scoreResult = findViewById(R.id.tvScore);

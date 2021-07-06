@@ -1,9 +1,9 @@
 package com.example.faisal.wisataquizapp;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -15,7 +15,6 @@ import android.widget.SpinnerAdapter;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText edtName;
-    private Button btnStart;
     private Spinner spCount;
 
     @Override
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //membuat dan mensetting spinner
         spCount.setAdapter(adapterCount());
         //memanggil button mulai
-        btnStart = findViewById(R.id.btn_start);
+        Button btnStart = findViewById(R.id.btn_start);
         //event button mulai ketika di klik
         btnStart.setOnClickListener(this);
     }
@@ -45,38 +44,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_start:
+        if (view.getId() == R.id.btn_start) {//menampilkan progressbar
+            final ProgressBar progressBar = findViewById(R.id.progressBar);
+            progressBar.setVisibility(View.VISIBLE);
 
-                //menampilkan progressbar
-                final ProgressBar progressBar = findViewById(R.id.progressBar);
-                progressBar.setVisibility(View.VISIBLE);
+            //mengecek apakah nama sudah diisi
+            if (edtName.getText().toString().isEmpty()) {
+                edtName.setError("Silahkan masukkan nama anda");
+            } else {
+                Intent intent_quiz = new Intent(MainActivity.this, QuestionActivity.class);
+                //kirim nama user ke acvity selanjutnya
+                intent_quiz.putExtra("name", edtName.getText().toString());
+                //kirim jumlah soal yang diinginkan
+                intent_quiz.putExtra("amount", spCount.getSelectedItem().toString());
+                //membuka activity QuestionActivity
+                startActivity(intent_quiz);
+                //agar tidak bisa kembali ke activity sebelumnya
+                finish();
+            }
 
-                //mengecek apakah nama sudah diisi
-                if (edtName.getText().toString().isEmpty()) {
-                    edtName.setError("Silahkan masukkan nama anda");
-                } else {
-                    Intent intent_quiz = new Intent(MainActivity.this, QuestionActivity.class);
-                    //kirim nama user ke acvity selanjutnya
-                    intent_quiz.putExtra("name", edtName.getText().toString());
-                    //kirim jumlah soal yang diinginkan
-                    intent_quiz.putExtra("amount", spCount.getSelectedItem().toString());
-                    //membuka activity QuestionActivity
-                    startActivity(intent_quiz);
-                    //agar tidak bisa kembali ke activity sebelumnya
-                    finish();
-                }
-
-                //mengatur waktu tampil progressbar selama 2 detik
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        //menyembunyikan progressbar
-                        progressBar.setVisibility(View.INVISIBLE);
-                    }
-                }, 2000);
-
-                break;
+            //mengatur waktu tampil progressbar selama 2 detik
+            new Handler().postDelayed(() -> {
+                //menyembunyikan progressbar
+                progressBar.setVisibility(View.INVISIBLE);
+            }, 2000);
         }
     }
 

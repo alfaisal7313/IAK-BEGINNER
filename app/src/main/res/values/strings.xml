@@ -19,6 +19,7 @@
     <string name="wisata_bromo"><![CDATA[Gunung Bromo  adalah sebuah gunung berapi aktif di Jawa Timur,  suku Tengger mempercayai sebagai gunung suci. Setiap setahun sekali merekan mengadakan upacara Kasodo, tanggal berapakah upacara tersebut biasa dilakukan? (Pilih 2 jawaban)]]></string>
     <string name="wisata_wakatobi"><![CDATA[Merupakan kawasan taman nasional yang ditetapkan pada tahun 1996, berlokasi di salah satu kabupaten di Provinsi Sulawesi Tenggara. Terdapat keanekaragaman hayati laut dan kondisi karang yang menempati salah satu posisi prioritas tertinggi dari konservasi laut di Indonesia, Objek wisata ini teletak dikabupaten?]]></string>
     <string name="wisata_komodo"><![CDATA[Pulau yang terletak di Kepulauan Nusa Tenggara, pulau ini dikenal sebagai habitat asli. Pulau ini juga merupakan kawasan Taman Nasional, sebutkan nama pulau tersebut?]]></string>
+    <string name="name">\"Nama : %s\"</string>
     <!--Array dropdown-->
     <string-array name="question_amount">
         <item>5</item>

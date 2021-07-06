@@ -1,9 +1,8 @@
 package com.example.faisal.wisataquizapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -17,7 +16,6 @@ public class QuestionActivity extends AppCompatActivity {
     private int wrongValue = 0;
     private String name;
     private String question_amount;
-    private boolean questionView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,7 +122,7 @@ public class QuestionActivity extends AppCompatActivity {
         check_3 = findViewById(R.id.cb_3_q1);
         check_4 = findViewById(R.id.cb_4_q1);
 
-        if (check_1.isChecked() == false && check_2.isChecked() == false && check_3.isChecked() == false && check_4.isChecked() == false) {
+        if (!check_1.isChecked() && !check_2.isChecked() && !check_3.isChecked() && !check_4.isChecked()) {
             score = 0;
             wrongValue = 0;
         } else {
@@ -212,7 +210,7 @@ public class QuestionActivity extends AppCompatActivity {
         check_3 = findViewById(R.id.cb_3_q8);
         check_4 = findViewById(R.id.cb_4_q8);
 
-        if (check_1.isChecked() == false && check_2.isChecked() == false && check_3.isChecked() == false && check_4.isChecked() == false) {
+        if (!check_1.isChecked() && !check_2.isChecked() && !check_3.isChecked() && !check_4.isChecked()) {
             score = 0;
             wrongValue = 0;
         } else {
@@ -261,13 +259,11 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
     //fungsi yang digunakan apabila jawaban benar
-    public int incrementScore() {
+    public void incrementScore() {
         score++;
-        return score;
     }
 
-    public int wrongScore() {
+    public void wrongScore() {
         wrongValue++;
-        return wrongValue;
     }
 }
